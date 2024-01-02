@@ -2,6 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import MainBody from './components/MainBody'
+
 
 function App() {
 
@@ -14,7 +16,19 @@ function App() {
 
     //1 main div and header body and input 3 div */}
     
-      <div className='bg-[#f95959] h-screen'>
+      <div className='bg-[#2c2c2c] h-screen py-4 relative flex flex-col justify-between text-cyan-300'>
+
+        <div className="header uppercase font-bold text-3xl text-center mb-4">
+          ChatGPT 2.0
+        </div>
+
+        <div className="body">
+           <MainBody/>
+        </div>
+
+        <div className="input">
+            Input 
+        </div>
      
       </div></>
   )

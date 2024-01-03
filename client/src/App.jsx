@@ -17,7 +17,7 @@ function App() {
 
     //1 main div and header body and input 3 div */}
     
-      <div className='bg-[#2c2c2c] h-screen py-4 relative flex flex-col justify-between text-cyan-300'>
+      <div className='bg-[#2c2c2c] h-screen py-4 px-16 relative flex flex-col justify-between text-cyan-300'>
 
 
         <div className="bg-1"></div>

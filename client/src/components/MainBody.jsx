@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainBody = () => {
 
-  const chat = 'border-[#aff145] border-2 self-end rounded-lg py-2 px-1 max-w-[80%]'
+  const chat = 'border-[#aff145] border-2 self-end rounded-lg py-2 px-2 max-w-[80%]'
 
 
 

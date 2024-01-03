@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bg-1{
+    position: absolute;
+    height: 400px;
+    width: 250px;
+    top:auto;
+    background: #1f2874;
+    filter: blur(170px);
+}
+
+.bg-2{
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    background: #521f74;
+    filter: blur(170px);
+    right: 0;
+}

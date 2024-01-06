@@ -24,3 +24,20 @@ app.listen("3080", ()=> console.log("Running on port 3080"))
 app.get("/", (req, res) => {
     res.send("Responding")
 })
+
+app.post('\/', async (req, res)=>{
+    const {message} = req.body
+
+    try {
+        const response = await openai.createCompletion({
+            model: "text-devinci-003",
+            prompt: `${message}`,
+            max_tokens: 100,
+            temperature: .5
+        })
+        res.json({message: response.data.choices[0].value})
+    } catch (e) {
+        console.log(e)
+        res.send(e).status(400)
+    }
+})

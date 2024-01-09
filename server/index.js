@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
     res.send("Responding")
 })
 
-app.post('\/', async (req, res)=>{
+app.post('/', async (req, res)=>{
     const {message} = req.body
 
     try {

@@ -1,14 +1,22 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import { useState } from 'react'
 import './App.css'
 import MainBody from './components/MainBody'
 import UserInput from './components/UserInput'
 
 
 function App() {
+   const [chat, setChat] = useState([])  
+
+   const submit = async (message) => {
+    await Promise.resolve(setChat((prev)=> [...prev, message]))
+   }
 
   return (
+
+   
    
    <>
       {/* // Starting with the new project called chatGPT-2.0 using React JS, Vite & Tailwind CSS. We are here learning concepts of 
@@ -29,11 +37,11 @@ function App() {
         </div>
 
         <div className="body h-[85%] overflow-auto py-7 px-3 w-full max-w-4xl min-w-80 self-center">
-           <MainBody/>
+           <MainBody chat={chat}/>
         </div>
 
         <div className="input w-full max-w-4xl min-w-80 self-center">
-          <UserInput/>
+          <UserInput sendMessage={sendMessage}/>
         </div>
      
       </div></>
